@@ -42,7 +42,7 @@
                 <p>+7 (812) 555-05-55</p>
               </div>
               <div class="address">
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>                
+                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>               
               </div>
             </div>
 
@@ -78,20 +78,54 @@
           <h2>Перфораторы</h2>
         </div>
 
-        <div class="main-filters">
-          <div class="filter-name">
-            <p>Фильтр:</p>        
-          </div>
+        <aside class="main-filters">
+          <form action="form.php" method="GET">
+            <div class="filter-name">
+              <p>Фильтр:</p>        
+            </div>
 
-          <div class="filter-price">
-            <h3>Цена:</h3>
-          </div>
+            <div class="filter-price">
+              <h3>Цена:</h3>
+              <div class="price-bar">
+                <div class="min-toggle"></div>
+                <div class="price-scale"></div>
+                <div class="max-toggle"></div>
+              </div>
+              <input type="text" name="min-price" value="min-price" placeholder="0">
+              <input type="text" name="max-price" value="max-price" placeholder="30000">
+            </div>
 
-          <div class="filter-producers">
-            <h3>Производители:</h3>
-            
-          </div>
-        </div>
+            <fieldset class="filter-producers">
+              <legend>Производители:</legend>            
+              <input id="bosch" type="checkbox" name="producers" value="bosch" checked>
+              <label for="bosch">Bosch</label>
+
+              <input id="interskol" type="checkbox" name="producers" value="interskol">
+              <label for="interskol">Интерскол</label>
+
+              <input id="makita" type="checkbox" name="producers" value="makita" checked>
+              <label for="makita">Makita</label>
+
+              <input id="dewalt" type="checkbox" name="producers" value="dewalt">
+              <label for="dewalt">Dewalt</label>
+
+              <input id="hitachi" type="checkbox" name="producers" value="hitachi">
+              <label for="hitachi">Hitachi</label>
+            </fieldset> 
+
+            <fieldset class="charging-type">
+              <legend>Питание:</legend>
+              <input id="accumulator" type="radio" name="charging-type" value="accumulator" checked>
+              <label for="accumulator">Аккумуляторные</label>
+
+              <input id="network" type="radio" name="charging-type" value="network">
+              <label for="network">Сетевые</label>
+            </fieldset>
+
+            <a class="sort-btn" href="#">Показать</a>
+          </form>
+        </aside>
+
 
 
 
