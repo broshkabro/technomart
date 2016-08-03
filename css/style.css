@@ -1,0 +1,28 @@
+body {
+  font-size: 13px; 
+  line-height: 18px;
+  color: #000;
+  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;   
+  color: #000;
+  font-weight: normal;
+  font-family: Cuprum, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 30px;   
+  color: #32425c;
+  font-weight: normal;
+  font-family: Cuprum, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 18px;   
+  color: #000;
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+}
