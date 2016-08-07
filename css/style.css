@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 13px; 
   line-height: 18px;
   color: #000;
@@ -26,3 +27,328 @@ h3 {
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
 }
+
+/*HEADER*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 220px;
+}
+
+.search {
+  float: left;
+  width: 240px;
+}
+
+.user-bar {
+  float: right;
+  width: 434px;
+}
+
+.top-menu {
+  margin-bottom: 41px;
+  background-color: #293449;
+}
+
+.shop-info {
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.shop-info .description {
+  float: left;
+  width: 300px;
+}
+
+.shop-info .contacts {
+  float: left;
+  width: 300px;
+}
+
+.user-block {
+  float: right;
+  width: 300px;
+}
+
+.main-menu {
+  width: 100%;
+  margin-bottom: 60px;
+  clear: both;
+  background-color: #32425c;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  background-color: #f1f5f7;
+}
+
+/*OFFER BLOCKS*/
+
+.offer {
+  float: left;
+  width: 300px;  
+}
+
+.materials,
+.tools,
+.technics {  
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.technics {
+  margin-right: 0;
+}
+
+.slider {
+  float: left;
+  width: 620px;  
+  margin-right: 20px;  
+}
+
+.offer-blocks {
+  margin-bottom: 54px;
+}
+
+/*POPULAR GOODS AND PRODUCERS*/
+
+.popular-items-header,
+.popular-produsers-header {
+  margin-bottom: 20px;
+  background-color: #f7f3ec; 
+}
+
+
+.popular-items-header h2 {
+  float: left;
+  width: 300px;
+}
+
+.popular-btn {
+  float: right;
+  width: 255px;  
+}
+
+.popular-btn {
+  background-color: #ee3643;
+} 
+
+.popular-items-preview {
+  font-size: 0;
+}
+
+.popular-items-preview section {
+  display: inline-block;
+
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top; 
+  font-size: 18px;  
+}
+
+.popular-items-preview section:nth-child(4n) {
+  margin-right: 0; 
+}
+
+.popular-produsers-header h2 {
+  float: left;
+  width: 390px;  
+}
+
+.popular-produsers-logo {
+  font-size: 0;
+}
+
+.produsers-logo {
+  display: inline-block;
+
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top; 
+  font-size: 18px;  
+}
+
+.popular-produsers-logo a:nth-child(4n) {
+  margin-right: 0; 
+}
+
+.popular-produsers {
+  margin-bottom: 64px;
+}
+
+/*FEATURES*/
+
+.features {
+  background-color: #f2f6f8;
+}
+
+.services {
+  width: 400px;
+}
+
+.services h2 {
+  margin: 0;
+}
+
+.company-description {
+  float: left;
+  width: 525px;
+}
+
+.company-contacts {
+  float: right;
+  width: 300px;
+}
+
+.main-footer{
+  margin-top: 85px;
+  background-color: #32425c;
+}
+
+.footer-menu-top {
+  float: right;
+  width: 550px;
+}
+
+.address-phone {
+  float: left;
+  width: 330px;
+}
+
+.footer-menu-bottom {
+  float: right;
+  width: 540px;
+}
+
+.footer-navigation {
+  margin-bottom: 48px;
+}
+
+.footer-contacts {
+  background-color: #293449;
+}
+
+.copyrights {
+  float: left;
+  width: 230px;  
+}
+
+.social {
+  float: left;
+  width: 160px;
+}
+
+.developers-info {
+  float: right;
+  width: 300px;
+}
+
+.footer-mail-to{
+  float: left;
+  width: 140px;
+}
+
+.developers-webpage {
+  float: right;
+  width: 120px;
+}
+
+
+
+
+
+/*для оформления*/
+/*
+.container {
+  background-color: rgba(0, 128, 0, 0.2);  
+}
+
+.logo {
+  background-color: #f7dee0;
+}
+
+.search {
+  background-color: #feeeb9;
+}
+
+.user-bar {
+  background-color: #f9b3c1;
+}
+
+.shop-info {
+  background-color: #fab2df;
+}
+
+.shop-info .description {
+  background-color: #da355f;
+}
+
+.shop-info .contacts {
+  background-color: #f58e50;
+}
+
+.user-block {
+  background-color: #0376df;
+}
+
+.popular-items-header h2 {
+  background-color: #ff9c00;
+}
+
+.popular-items-preview section {
+   background-color: #00aeff; 
+}
+
+.popular-items-preview  {
+   background-color: #ae0066; 
+}
+
+.company-description {
+  background-color: #ccdbff;
+}
+
+.company-contacts {
+  background-color: #6ff;
+}
+
+.company-info {
+  background-color: #ccffa8;
+}
+
+.company-contacts {
+  background-color: #00cf99;
+}
+
+.footer-navigation {
+  background-color: #ff8133;
+}
+
+.developers-info,
+.copyrights {
+  background-color: rgb(255, 234, 204);
+}
+
+.social {
+  background-color: #f9f;
+}
+
+.footer-contacts {
+  background-color: #e1ff99;
+}
+
+*/
