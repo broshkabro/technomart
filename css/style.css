@@ -45,7 +45,7 @@ h3 {
 
 .logo {
   float: left;
-  width: 220px;
+  width: 220px;  
 }
 
 .search {
@@ -90,8 +90,7 @@ h3 {
   background-color: #32425c;
 }
 
-.main-header {
-  margin-bottom: 60px;
+.main-header {  
   background-color: #f1f5f7;
 }
 
@@ -120,6 +119,7 @@ h3 {
 }
 
 .offer-blocks {
+  margin-top: 60px;
   margin-bottom: 54px;
 }
 
@@ -215,8 +215,13 @@ h3 {
   width: 300px;
 }
 
-.main-footer{
-  margin-top: 85px;
+.company-info {
+  margin-bottom: 85px;
+}
+
+/*FOOTER*/
+
+.main-footer{  
   background-color: #32425c;
 }
 
@@ -268,7 +273,73 @@ h3 {
   width: 120px;
 }
 
+.logo h1 {
+  color: #fff;
+}
 
+/*=CATALOG.HTML=*/
+
+.perforators {
+  background-color: #f2f6f8;
+}
+
+.main-filters {
+  float: left;
+  width: 220px;
+}
+
+/*MAIN-GALLERY HEADER*/
+
+.main-gallery {
+  float: right;
+  width: 700px;
+  margin-bottom: 57px;
+}
+
+.main-gallery-filter {
+  background-color: #f7f3ec;  
+}
+/*
+.main-gallery-filter span {
+  float: left;
+  width: 140px;
+}
+
+.main-gallery-filter {
+  float: right;
+  width: 380px;
+}
+
+.filter-pointer {
+  float: right;
+  width: 60px;
+}*/
+
+/*MAIN-GALLERY GOODS*/
+
+.main-gallery-items {
+  font-size: 0;
+}
+
+.main-gallery-items section {
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.main-gallery-items section:nth-child(3n) {
+  margin-right: 0;
+}
+
+.perforators-description {
+  padding-top: 67px;
+  padding-bottom: 70px;
+  clear: both;
+  background-color: #f2f6f8;
+}
 
 
 
