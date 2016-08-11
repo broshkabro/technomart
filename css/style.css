@@ -48,14 +48,20 @@ h3 {
   width: 220px;  
 }
 
+.logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .search {
   float: left;
-  width: 240px;
+  width: 240px;  
 }
 
 .user-bar {
   float: right;
-  width: 434px;
+  width: 434px;  
 }
 
 .top-menu {
@@ -93,6 +99,8 @@ h3 {
 .main-header {  
   background-color: #f1f5f7;
 }
+
+
 
 /*OFFER BLOCKS*/
 
@@ -271,10 +279,6 @@ h3 {
 .developers-webpage {
   float: right;
   width: 120px;
-}
-
-.logo h1 {
-  color: #fff;
 }
 
 /*=CATALOG.HTML=*/
