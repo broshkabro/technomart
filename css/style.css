@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-  font-size: 24px;   
-  color: #fff;
+  font-size: 24px;     
   font-weight: normal;    
   font-family: Cuprum, Arial, sans-serif; 
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  color: #fff;
 }
 
 h2 {
@@ -46,22 +46,56 @@ h3 {
   clear: both;
 }
 
+/*top header user-bar*/
+
 .logo {
   float: left;
-  width: 220px;  
+  width: 200px; 
+  padding: 0 10px;
+  margin-right: 20px;  
+  text-align: center;   
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;  
+}
+
+.logo h1 { 
+  padding: 12px 0;
+  margin: 0;
 }
 
 .search {
   float: left;
-  width: 240px;  
+  width: 240px; 
+  padding-top: 12px; 
 }
+
 
 .user-bar {
   float: right;
-  width: 434px;  
+  width: 434px; 
+  font-size: 0; 
+}
+
+.user-bar a {
+  display: inline-block;
+  padding: 12px 0;
+  margin-right: 30px;  
+
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #fff;
+}
+
+.user-bar .order {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #63a63e;
 }
 
 .top-menu {
+  min-height: 42px;
   margin-bottom: 41px;
   background-color: #293449;
 }
@@ -346,9 +380,6 @@ h3 {
 
 /*для оформления*/
 /*
-.container {
-  background-color: rgba(0, 128, 0, 0.2);  
-}
 
 .logo {
   background-color: #f7dee0;
@@ -421,6 +452,10 @@ h3 {
 
 .footer-contacts {
   background-color: #e1ff99;
+}
+
+.container {
+  background-color: rgb(150, 143, 126);  
 }
 
 */
