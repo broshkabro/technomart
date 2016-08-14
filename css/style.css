@@ -1,31 +1,34 @@
 body {
+  min-width: 940px;
   margin: 0;
   font-size: 13px; 
-  line-height: 18px;
-  color: #000;
+  line-height: 18px;  
   font-weight: normal;
   font-family: "PT Sans", Arial, sans-serif;
+  color: #000;
 }
 
 h1 {
   font-size: 24px;   
-  color: #000;
-  font-weight: normal;
-  font-family: Cuprum, Arial, sans-serif;
+  color: #fff;
+  font-weight: normal;    
+  font-family: Cuprum, Arial, sans-serif; 
+  text-transform: uppercase; 
 }
 
-h1 {
+h2 {
   font-size: 30px;   
   color: #32425c;
   font-weight: normal;
   font-family: Cuprum, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 18px;   
   color: #000;
   font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;  
 }
 
 /*HEADER*/
@@ -46,12 +49,6 @@ h3 {
 .logo {
   float: left;
   width: 220px;  
-}
-
-.logo h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #fff;
 }
 
 .search {
