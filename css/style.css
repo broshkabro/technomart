@@ -52,6 +52,7 @@ h3 {
   float: left;
   width: 200px; 
   padding: 0 10px;   
+
   text-align: center;   
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;  
@@ -64,13 +65,15 @@ h3 {
 
 .search {
   float: left;
-  width: 270px;   
+  width: 270px;
+  margin-right: 15px;   
 }
 
 .search input {
-  width: 100%;
-  padding: 12px 20px 12px 45px; 
+  width: 100%;  
+  padding: 12px 20px 12px 45px;   
   box-sizing: border-box;
+
   font-family: Cuprum, Arial, sans-serif;
   font-size: 17px;
   border: none;    
@@ -101,9 +104,8 @@ h3 {
 }
 
 .user-bar a {
-  display: inline-block;
-  padding: 12px 0;
-  margin-right: 30px;  
+  display: inline-block;  
+  padding: 12px 0;  
 
   vertical-align: top;
   text-decoration: none;
@@ -112,15 +114,24 @@ h3 {
   color: #fff;
 }
 
+.user-bar .bookmarks,
+.user-bar .cart {
+  margin: 0 30px;
+}
+
+.user-bar .bookmarks {
+  margin-right: 45px
+}
+
 .user-bar .order {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 21px;
+  padding-left: 21px;
   background-color: #63a63e;
 }
 
 .top-menu {
   min-height: 42px;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   background-color: #293449;
 }
 
@@ -131,7 +142,15 @@ h3 {
 
 .shop-info .description {
   float: left;
-  width: 300px;
+  width: 200px;
+  margin-right: 70px;
+  margin-left: 50px;  
+
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #ee3643;
 }
 
 .shop-info .contacts {
@@ -154,7 +173,6 @@ h3 {
 .main-header {  
   background-color: #f1f5f7;
 }
-
 
 
 /*OFFER BLOCKS*/
