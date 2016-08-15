@@ -51,8 +51,7 @@ h3 {
 .logo {
   float: left;
   width: 200px; 
-  padding: 0 10px;
-  margin-right: 20px;  
+  padding: 0 10px;   
   text-align: center;   
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;  
@@ -65,10 +64,35 @@ h3 {
 
 .search {
   float: left;
-  width: 240px; 
-  padding-top: 12px; 
+  width: 270px;   
 }
 
+.search input {
+  width: 100%;
+  padding: 12px 20px 12px 45px; 
+  box-sizing: border-box;
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 17px;
+  border: none;    
+  background-color: #293449;  
+}
+
+.search input::-webkit-input-placeholder { /* Chrome */
+  color: #fff;
+  opacity: 1;
+}
+.search input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  opacity: 1;
+}
+.search input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.search input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
+}
 
 .user-bar {
   float: right;
