@@ -155,8 +155,18 @@ h3 {
 
 .shop-info .contacts {
   float: left;
-  width: 300px;
+  width: 270px;  
 }
+
+.shop-info .phone {  
+  text-align: center;
+  font-size: 21px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #e9292a;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+
 
 .user-block {
   float: right;
