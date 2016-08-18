@@ -131,13 +131,22 @@ h3 {
 
 .top-menu {
   min-height: 42px;
-  margin-bottom: 35px;
+  margin-bottom: 47px;
   background-color: #293449;
 }
 
+/*contacts-description,phonenumber and address*/
+
 .shop-info {
   margin-bottom: 40px;
-  clear: both;
+  clear: both;  
+}
+
+.description p,
+.phonenumber p,
+.address p {
+  margin: 0;
+  padding: 0;
 }
 
 .shop-info .description {
@@ -155,10 +164,14 @@ h3 {
 
 .shop-info .contacts {
   float: left;
-  width: 270px;  
+  width: 270px;
+  margin-right: 68px;    
 }
 
-.shop-info .phone {  
+.contacts .phonenumber { 
+  padding: 9px 47px 9px 67px;
+  margin-bottom: 9px;
+
   text-align: center;
   font-size: 21px;
   font-family: Cuprum, Arial, sans-serif;
@@ -167,17 +180,84 @@ h3 {
   box-sizing: border-box;
 }
 
+.contacts .address {
+  text-align: center;
+  font-size: 14px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #32425c;  
+}
 
 .user-block {
   float: right;
-  width: 300px;
+  width: 280px;
 }
+
+/*sign-in and registration btns*/
+
+.sign-in,
+.sign-up {
+  display: inline-block; 
+
+
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 18px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sign-in {
+  max-width: 120px;
+  padding: 13px 26px 13px 46px;
+  margin-right: 10px;
+}
+
+.sign-up {
+  max-width: 150px;
+  padding: 13px 22px;   
+}
+
+/*main navigation*/
 
 .main-menu {
   width: 100%;
   margin-bottom: 60px;
   clear: both;
+  color: #fff;
   background-color: #32425c;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-family: Cuprum, Arial, sans-serif;
+  vertical-align: top;
+}
+
+.main-menu a {
+  display: block;  
+  padding: 23px 28px;   
+
+  color: #fff;
+  text-decoration: none;
 }
 
 .main-header {  
