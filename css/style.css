@@ -138,7 +138,7 @@ h3 {
 /*contacts-description,phonenumber and address*/
 
 .shop-info {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   clear: both;  
 }
 
@@ -231,11 +231,14 @@ h3 {
   width: 100%;
   margin-bottom: 60px;
   clear: both;
+
+  text-align: center; 
   color: #fff;
   background-color: #32425c;
+  border-bottom: 5px solid #293449;
 }
 
-.main-menu ul {
+.main-menu ul {  
   margin: 0;
   padding: 0;
 
@@ -254,7 +257,7 @@ h3 {
 
 .main-menu a {
   display: block;  
-  padding: 23px 28px;   
+  padding: 19px 31px;   
 
   color: #fff;
   text-decoration: none;
@@ -267,9 +270,22 @@ h3 {
 
 /*OFFER BLOCKS*/
 
-.offer {
+.offer {  
+  position: relative;
   float: left;
-  width: 300px;  
+  width: 252px;  
+  padding: 21px 24px 22px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #fff;
+}
+
+.promo-img {  
+  position: absolute;
+  top: 28%;
+  left: 65%;  
 }
 
 .materials,
@@ -279,9 +295,57 @@ h3 {
   margin-bottom: 20px;
 }
 
+.offer b {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/*style for promo-btn*/
+
+.promo-btn {
+  display: inline-block;    
+  width: 125px;
+  padding: 10px 5px;
+
+  border: none;
+  border-radius: 3px; 
+  outline: none;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);  
+  cursor: pointer;  
+}
+
+.materials {
+  background-color: #f6b22d;
+}
+
+.tools {
+  background-color: #4aafde;
+}
+
 .technics {
   margin-right: 0;
+  background-color: #cc79d1;
 }
+
+.sales {
+  margin-bottom: 20px;
+  background-color: #85d179;
+}
+
+.shipment {
+  background-color: #f6b22d;
+}
+
+/*slider*/
 
 .slider {
   float: left;
@@ -290,7 +354,7 @@ h3 {
 }
 
 .offer-blocks {
-  margin-top: 60px;
+  margin-top: 59px;
   margin-bottom: 54px;
 }
 
