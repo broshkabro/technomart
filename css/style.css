@@ -63,6 +63,16 @@ h3 {
   margin: 0;
 }
 
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
+}
+
 .search {
   float: left;
   width: 270px;
@@ -97,6 +107,15 @@ h3 {
   opacity: 1;
 }
 
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: #fff;
+  color: #000;
+}
+
 .user-bar {
   float: right;
   width: 434px; 
@@ -114,13 +133,25 @@ h3 {
   color: #fff;
 }
 
-.user-bar .bookmarks,
-.user-bar .cart {
-  margin: 0 30px;
+.user-bar .bookmarks {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
-.user-bar .bookmarks {
-  margin-right: 45px
+.user-bar .cart {
+  padding-right: 30px;
+  padding-left: 45px
+}
+
+.user-bar .bookmarks:hover,
+.user-bar .cart:hover {
+  background-color: #212a3a;
+}
+
+.user-bar .bookmarks:active,
+.user-bar .cart:active {
+  background-color: #161d29;  
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .user-bar .order {
@@ -128,6 +159,15 @@ h3 {
   padding-left: 21px;
   background-color: #63a63e;
 }
+
+.user-bar .order:hover {
+  background-color: #5fbb2d;
+} 
+
+.user-bar .order:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.6);  
+} 
 
 .top-menu {
   min-height: 42px;
@@ -225,6 +265,16 @@ h3 {
   padding: 13px 22px;   
 }
 
+.sign-in:hover,
+.sign-up:hover {
+  color: #ee3643;
+}
+
+.sign-in:active,
+.sign-up:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*main navigation*/
 
 .main-menu {
@@ -263,6 +313,16 @@ h3 {
   text-decoration: none;
 }
 
+.main-menu a:hover {
+  background-color: #293449;
+}
+
+.main-menu a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5); 
+}
+
+
 .main-header {  
   background-color: #f1f5f7;
 }
@@ -270,7 +330,7 @@ h3 {
 
 /*OFFER BLOCKS*/
 
-.offer {  
+.offer {   
   position: relative;
   float: left;
   width: 252px;  
@@ -280,12 +340,6 @@ h3 {
   line-height: 30px;
   font-family: Cuprum, Arial, sans-serif;
   color: #fff;
-}
-
-.promo-img {  
-  position: absolute;
-  top: 28%;
-  left: 65%;  
 }
 
 .materials,
@@ -298,6 +352,50 @@ h3 {
 .offer b {
   display: block;
   margin-bottom: 12px;
+}
+
+.offer::before {
+  content: "";
+
+  position: absolute;
+  top: 30px;    
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.materials::before {
+  left: 213px;
+  width: 44px;
+  height: 65px;
+  background-position: -93px -5px;
+}
+
+.tools::before {
+  left: 197px;
+  width: 75px;
+  height: 61px;
+  background-position: -147px -5px;
+}
+
+.technics::before {
+  left: 191px;
+  width: 78px;
+  height: 62px;
+  background-position: -74px -80px;
+}
+
+.sales::before {
+  left: 196px;
+  width: 59px;
+  height: 72px;
+  background-position: -5px -80px;
+}
+
+.shipment::before {
+  left: 191px;
+  width: 78px;
+  height: 63px;
+  background-position: -5px -5px;
 }
 
 /*style for promo-btn*/
@@ -321,6 +419,14 @@ h3 {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.1);  
   cursor: pointer;  
+}
+
+.promo-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .materials {
@@ -355,7 +461,7 @@ h3 {
 
 .offer-blocks {
   margin-top: 59px;
-  margin-bottom: 54px;
+  margin-bottom: 54px;  
 }
 
 /*POPULAR GOODS AND PRODUCERS*/
@@ -364,6 +470,7 @@ h3 {
 .popular-produsers-header {
   margin-bottom: 20px;
   background-color: #f7f3ec; 
+  clear: both;
 }
 
 
@@ -576,7 +683,6 @@ h3 {
 
 /*для оформления*/
 /*
-
 .logo {
   background-color: #f7dee0;
 }
