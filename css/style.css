@@ -461,32 +461,52 @@ h3 {
 
 .offer-blocks {
   margin-top: 59px;
-  margin-bottom: 54px;  
+  margin-bottom: 50px;  
 }
 
 /*POPULAR GOODS AND PRODUCERS*/
 
 .popular-items-header,
 .popular-produsers-header {
-  margin-bottom: 20px;
-  background-color: #f7f3ec; 
+  margin-bottom: 20px;  
+  background-color: #f7f3ec;   
   clear: both;
 }
 
 
-.popular-items-header h2 {
+.popular-items-header h2,
+.popular-produsers-header h2 {  
   float: left;
-  width: 300px;
+  width: 300px;  
+  padding: 0;
+  padding-top: 10px;  
+  padding-left: 30px;
 }
 
-.popular-btn {
+.popular-produsers-header h2 {
+  float: left;
+  width: 390px;  
+}
+
+.popular-btn {  
   float: right;
-  width: 255px;  
+  width: 234px;
+  padding: 10px;
+  margin: 25px 0;
+  margin-right: 24px;
+
+  text-align: center;  
+  text-decoration: none;  
+  text-transform: uppercase; 
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ee3643;  
 }
 
-.popular-btn {
-  background-color: #ee3643;
-} 
+/*popular items style*/
 
 .popular-items-preview {
   font-size: 0;
@@ -495,21 +515,29 @@ h3 {
 .popular-items-preview section {
   display: inline-block;
 
-  width: 220px;
+  width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
-  vertical-align: top; 
-  font-size: 18px;  
+  
+  vertical-align: top;
+  border: 1px solid #e5e5e5; 
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;    
 }
 
 .popular-items-preview section:nth-child(4n) {
   margin-right: 0; 
 }
 
-.popular-produsers-header h2 {
-  float: left;
-  width: 390px;  
+.popular-items-preview .actions {
+  display: none;
 }
+
+
+
+/*popular producers style*/
 
 .popular-produsers-logo {
   font-size: 0;
