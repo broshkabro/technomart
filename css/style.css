@@ -31,6 +31,11 @@ h3 {
   font-family: "PT Sans", Arial, sans-serif;  
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*HEADER*/
 
 .container {
@@ -506,6 +511,14 @@ h3 {
   background-color: #ee3643;  
 }
 
+.popular-btn:hover {
+  background-color: #ca2c37;
+}
+
+.popular-btn:active {
+  background-color: #ba2732;
+}
+
 /*popular items style*/
 
 .popular-items-preview {
@@ -546,11 +559,15 @@ h3 {
 .produsers-logo {
   display: inline-block;
 
-  width: 220px;
+  width: 218px;
+  height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
-  vertical-align: top; 
-  font-size: 18px;  
+
+  vertical-align: top;   
+  font-size: 18px; 
+  text-align: center;
+  border: 1px solid #e5e5e5; 
 }
 
 .popular-produsers-logo a:nth-child(4n) {
