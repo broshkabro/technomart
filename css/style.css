@@ -564,11 +564,18 @@ img {
   margin-right: 20px;
   margin-bottom: 20px;
 
-  vertical-align: top;   
-  font-size: 18px; 
+  vertical-align: middle;   
+  font-size: 18px;  
+  line-height: 143px;
   text-align: center;
+  overflow: hidden;
   border: 1px solid #e5e5e5; 
 }
+
+.produsers-logo img {  
+  vertical-align: middle; 
+}
+
 
 .popular-produsers-logo a:nth-child(4n) {
   margin-right: 0; 
