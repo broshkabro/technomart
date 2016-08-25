@@ -572,7 +572,7 @@ img {
   border: 1px solid #e5e5e5; 
 }
 
-.produsers-logo img {  
+.produsers-logo img {    
   vertical-align: middle; 
 }
 
@@ -583,6 +583,15 @@ img {
 
 .popular-produsers {
   margin-bottom: 64px;
+}
+
+.produsers-logo:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.produsers-logo:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 /*FEATURES*/
