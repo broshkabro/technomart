@@ -521,14 +521,16 @@ img {
 
 /*popular items style*/
 
-.popular-items-preview {
+.item-preview {
   font-size: 0;
 }
 
-.popular-items-preview section {
+.item-preview section {  
+  position: relative;
   display: inline-block;
 
   width: 218px;
+  height: 316px;
   margin-right: 20px;
   margin-bottom: 20px;
   
@@ -540,14 +542,39 @@ img {
   text-align: center;    
 }
 
-.popular-items-preview section:nth-child(4n) {
+.item-preview section:nth-child(4n) {
   margin-right: 0; 
 }
 
-.popular-items-preview .actions {
+.item-image {
+  position: relative;
+  width: 218px;
+  height: 168px;
+  overflow: hidden; 
+}
+
+.item-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%,-50%); 
+  vertical-align: middle;     
+}
+
+.item-preview .actions {
   display: none;
 }
 
+.new::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  background: url('../img/new-flag.png') no-repeat 0 0;
+}
 
 
 /*popular producers style*/
@@ -630,7 +657,35 @@ img {
 
 .footer-menu-top {
   float: right;
-  width: 550px;
+  width: 550px;   
+}
+
+.footer-menu-top ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.footer-menu-top li {
+  display: inline-block;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px; 
+  vertical-align: top;
+} 
+
+.footer-menu-top a {
+  display: block;
+  padding: 42px 20px;
+  
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-menu-top a:hover {
+  text-decoration: underline;
 }
 
 .address-phone {
@@ -776,11 +831,11 @@ img {
   background-color: #ff9c00;
 }
 
-.popular-items-preview section {
+.item-preview section {
    background-color: #00aeff; 
 }
 
-.popular-items-preview  {
+.item-preview  {
    background-color: #ae0066; 
 }
 
