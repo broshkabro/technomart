@@ -557,12 +557,120 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;  
-  transform: translate(-50%,-50%); 
+  transform: translate(-56%,-50%); 
   vertical-align: middle;     
 }
 
-.item-preview .actions {
+section .title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
+
+section .discount {
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+section .price-btn {
+  position: relative;
+
+  width: 80px;  
+  margin: 0 auto 20px;
+  padding: 10px 30px;
+
+  font-size: 17px;
+  color: #fff;
+  background-color: #ee3643;
+  border-radius: 3px;  
+  cursor: pointer;
+}
+
+section .price-btn:after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  content: '';
+
+  width: 0;
+  height: 0;
+  border: 20px solid #fff;
+  border-left-color: #ee3643
+}
+
+/*style for buy-bookmarks action*/
+.catalog-item .actions {
   display: none;
+}
+
+
+.catalog-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: #fff;
+  z-index: 30;
+}
+
+.actions .buy,
+.actions .add-bookmarks { 
+  display: block;
+  width: 135px;
+  margin: 0 auto 7px;
+  padding: 10px 0;  
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; 
+  text-decoration: none;
+  color: #fff;
+  background-color: #63a63e;
+  border-radius: 3px;
+}
+
+.actions .buy {
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.actions .buy:hover {
+  background-color: #5fbb2d;
+}
+
+.actions .buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.actions .add-bookmarks {
+  width: 129px;
+  padding: 7px 0;
+  color: #32425c;  
+  background-color: #fff;
+  border: 3px solid #63a63e;
+}
+
+.actions .add-bookmarks:hover {
+  border-color: #32425c;
+}
+
+.actions .add-bookmarks:active {
+  color: #c1c6ce;
+  border-color: #c1c6ce;
 }
 
 .new::before {
@@ -572,7 +680,7 @@ img {
   right: -1px;
   width: 60px;
   height: 60px;
-  z-index: 10;
+  z-index: 50;
   background: url('../img/new-flag.png') no-repeat 0 0;
 }
 
