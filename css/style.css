@@ -365,7 +365,7 @@ img {
   position: absolute;
   top: 30px;    
   background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
 }
 
 .materials::before {
@@ -500,15 +500,19 @@ img {
   margin: 25px 0;
   margin-right: 24px;
 
+  border: none;
+  border-radius: 3px; 
+  outline: none;
+
   text-align: center;  
   text-decoration: none;  
   text-transform: uppercase; 
   font-family: Cuprum, Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
-  border-radius: 3px;
+  line-height: 18px;  
   color: #fff;
-  background-color: #ee3643;  
+  background-color: #ee3643; 
+  cursor: pointer; 
 }
 
 .popular-btn:hover {
@@ -561,18 +565,23 @@ img {
   vertical-align: middle;     
 }
 
+.new .price-btn{
+  margin-top: 38px;
+}
+
 section .title {
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   padding: 0 25px;
 }
 
 section .discount {
   min-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 17px;
   color: #999;
   text-decoration: line-through;
+  text-transform: uppercase;
 }
 
 section .price-btn {
@@ -585,7 +594,8 @@ section .price-btn {
   font-size: 17px;
   color: #fff;
   background-color: #ee3643;
-  border-radius: 3px;  
+  border-radius: 3px; 
+  text-transform: uppercase; 
   cursor: pointer;
 }
 
@@ -595,7 +605,6 @@ section .price-btn:after {
   right: -20px;
 
   content: '';
-
   width: 0;
   height: 0;
   border: 20px solid #fff;
@@ -606,7 +615,6 @@ section .price-btn:after {
 .catalog-item .actions {
   display: none;
 }
-
 
 .catalog-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -732,6 +740,7 @@ section .price-btn:after {
 /*FEATURES*/
 
 .features {
+  padding-top: 1px; 
   background-color: #f2f6f8;
 }
 
@@ -741,11 +750,18 @@ section .price-btn:after {
 
 .services h2 {
   margin: 0;
+  margin-top: 70px;
+  margin-bottom: 35px;
+  color: #000;
+}
+
+.services p {
+  line-height: 24px;
 }
 
 .company-description {
   float: left;
-  width: 525px;
+  width: 525px;  
 }
 
 .company-contacts {
@@ -753,8 +769,87 @@ section .price-btn:after {
   width: 300px;
 }
 
+.company-description h2,
+.company-contacts h2 {
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 35px;
+  color: #000;
+}
+
 .company-info {
   margin-bottom: 85px;
+}
+
+.company-info p {
+  line-height: 24px;
+}
+
+.company-description .sentence {
+  margin-bottom: 35px;
+}
+
+.company-description ul {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.company-description li {
+  padding-bottom: 20px;  
+}
+
+.company-description li::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+  outline: 1px solid #fb565a;
+}
+
+.company-description .more-info,
+.company-contacts .mail-to {
+  display: block;
+  padding: 10px;
+
+  border: none;
+  border-radius: 3px; 
+  outline: none;
+
+  text-align: center;  
+  text-decoration: none;  
+  text-transform: uppercase; 
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ee3643;
+  cursor: pointer; 
+}
+
+.company-description .more-info {
+  width: 200px;
+}
+
+.company-description .mail-to {
+  width: 280px;
+}
+
+.company-description .more-info:hover,
+.company-contacts .mail-to:hover {
+  background-color: #ca2c37;
+}
+
+.company-description .more-info:active,
+.company-contacts .mail-to:active {
+  background-color: #ba2732;
 }
 
 /*FOOTER*/
@@ -799,11 +894,42 @@ section .price-btn:after {
 .address-phone {
   float: left;
   width: 330px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px; 
+  color: #fff;
+  clear: left;
 }
 
 .footer-menu-bottom {
   float: right;
-  width: 540px;
+  width: 560px;
+}
+
+.footer-menu-bottom ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0; 
+}
+
+.footer-menu-bottom li {
+  display: inline-block;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px;  
+
+  vertical-align: top;
+}
+
+.footer-menu-bottom a {
+  display: block;
+  padding: 0 26px;
+  
+  text-decoration: none;
+  color: #ffd180;
 }
 
 .footer-navigation {
@@ -811,6 +937,7 @@ section .price-btn:after {
 }
 
 .footer-contacts {
+  color: #fff;
   background-color: #293449;
 }
 
@@ -982,6 +1109,10 @@ section .price-btn:after {
 
 .container {
   background-color: rgb(150, 143, 126);  
+}
+
+.services h2 {
+  background-color: rgba(174, 50, 59, 0.5)
 }
 
 */
