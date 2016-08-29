@@ -1107,14 +1107,25 @@ section .price-btn:after {
   margin-bottom: 48px;
 }
 
+.footer-contacts,
+.footer-contacts a {  
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;  
+  background-color: #293449;
+}
+
 .footer-contacts {
   color: #fff;
-  background-color: #293449;
+}
+
+.footer-contacts a {
+  text-decoration: none;
 }
 
 .copyrights {
   float: left;
-  width: 230px;  
+  width: 230px;   
 }
 
 .social {
@@ -1127,7 +1138,7 @@ section .price-btn:after {
   width: 300px;
 }
 
-.footer-mail-to{
+.footer-mail-to {
   float: left;
   width: 140px;
 }
@@ -1136,6 +1147,20 @@ section .price-btn:after {
   float: right;
   width: 120px;
 }
+
+.developers-info a {
+  color: #ffd180;
+}
+
+.developers-info p {
+  margin: 0;
+}
+
+.footer-mail-to,
+.developers-webpage {
+  margin: auto 0;
+}
+
 
 /*=CATALOG.HTML=*/
 
