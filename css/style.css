@@ -980,9 +980,25 @@ section .price-btn:after {
   background-color: #32425c;
 }
 
+.footer-navigation .logo {
+  display: block;
+  width: 210px;
+  padding: 20px 5px;
+  padding-bottom: 15px;    
+}
+
+.logo b {
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .footer-menu-top {
   float: right;
-  width: 550px;   
+  width: 552px;   
 }
 
 .footer-menu-top ul {
@@ -1003,15 +1019,32 @@ section .price-btn:after {
 
 .footer-menu-top a {
   display: block;
-  padding: 42px 20px;
+  padding: 11px 30px;
+  padding-top: 42px;
   
   text-decoration: none;
   color: #fff;
 }
 
-.footer-menu-top a:hover {
+.footer-menu-top li:first-child a {
+  padding-left: 0px;
+}
+
+.footer-menu-top li:last-child a {
+  padding-right: 0;
+}
+
+.footer-menu-top a:hover,
+.footer-menu-bottom a:hover {
   text-decoration: underline;
 }
+
+.footer-menu-top a:active,
+.footer-menu-bottom a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 
 .address-phone {
   float: left;
@@ -1022,6 +1055,10 @@ section .price-btn:after {
   line-height: 24px; 
   color: #fff;
   clear: left;
+}
+
+.address-phone p{
+  margin: 0;
 }
 
 .footer-menu-bottom {
@@ -1048,10 +1085,22 @@ section .price-btn:after {
 
 .footer-menu-bottom a {
   display: block;
-  padding: 0 26px;
+  padding: 0 30px;
   
   text-decoration: none;
   color: #ffd180;
+}
+
+.footer-menu-bottom li:last-child a {
+  padding-right: 0;
+}
+
+.footer-menu-bottom {
+  padding-top: 30px;
+}
+
+.address-phone {
+  padding-top: 33px;
 }
 
 .footer-navigation {
