@@ -1167,13 +1167,13 @@ section .price-btn:after {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;  
-  background-color: #293449;
+  color: #fff;
+  background-color: #293449;  
 }
 
 .footer-contacts {  
   padding-top: 35px;
-  padding-bottom: 31px;
-  color: #fff;
+  padding-bottom: 31px;  
 }
 
 .footer-contacts p {
@@ -1192,6 +1192,65 @@ section .price-btn:after {
 .social {
   float: left;
   width: 160px;
+  margin-left: 160px; 
+
+  font-size: 0;   
+  text-align: center;  
+}
+
+.social .social-btn {
+  position: relative;
+
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  margin: 0 5px;
+
+  font-size: 0;   
+  vertical-align: top;
+  text-decoration: none; 
+  border-radius: 50%;
+  background-color: #212a3a;
+  cursor: pointer;  
+}
+
+.social .social-btn::before {
+  position: absolute;
+
+  font-family: "symbols-technomart";
+  font-size: 18px;
+}
+
+
+.social .vk::before {
+  content: "\76";
+  
+  top: 10px;
+  left: 10px;  
+}
+
+.social .facebook::before {
+  content: "\66";
+  
+  top: 10px;
+  left: 15px;  
+}
+
+.social .instagram::before {
+  content: "📷";
+  
+  top: 12px;
+  left: 12px;  
+}
+
+.social .social-btn:hover,
+.social .social-btn:hover::before {
+  background-color: #ee3643;
+}
+
+.social .social-btn:active,
+.social .social-btn:active::before {
+  background-color: #ee3643;
 }
 
 .developers-info {
@@ -1220,6 +1279,16 @@ section .price-btn:after {
 .footer-mail-to,
 .developers-webpage {
   margin: auto 0;
+}
+
+.footer-mail-to .mail-to:hover,
+.developers-webpage .webpage:hover {
+  text-decoration: underline;
+}
+
+.footer-mail-to .mail-to:active,
+.developers-webpage .webpage:active{
+  color: #ee3643;
 }
 
 
