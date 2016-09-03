@@ -136,12 +136,11 @@ img {
 .search {
   float: left;
   width: 270px;
-  margin-right: 15px;   
 }
 
 .search input {
-  width: 100%;  
-  padding: 12px 20px 12px 45px;   
+  width: 100%;
+  padding: 12px 20px 12px 47px;  
   box-sizing: border-box;
 
   font-family: Cuprum, Arial, sans-serif;
@@ -167,18 +166,42 @@ img {
   opacity: 1;
 }
 
-.search input:hover {
+.search .search-form {
+  position: relative;
+}
+
+.search .search-form::before {
+  content: "\1f50d";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+
+  font-family: "symbols-technomart";
+  font-size: 17px;
+  color: #fff;
+  opacity: 0.3;
+}
+
+input[type="search"]:hover {
   background-color: #212a3a;
 }
 
-.search input:focus {
+.search .search-form:hover::before {
+  opacity: 1;
+}
+
+input[type="search"]:focus {
   background-color: #fff;
   color: #000;
 }
 
+/*.search .search-form::before input[type="search"]:focus {
+  color: #ee3643;
+}*/
+
 .user-bar {
   float: right;
-  width: 434px; 
+  width: 449px; 
   font-size: 0; 
 }
 
@@ -193,19 +216,41 @@ img {
   color: #fff;
 }
 
+
 .user-bar .bookmarks {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 28px;
+  padding-left: 17px;
+}*
+
+.user-bar .bookmarks::before {
+  content: "\1f516";
+  margin-right: 13px;  
+  font-family: "symbols-technomart";
+  font-size: 17px;
+  opacity: 0.3;
 }
 
 .user-bar .cart {
-  padding-right: 30px;
-  padding-left: 45px
+  padding-right: 31px;
+  padding-left: 17px
+}
+
+.user-bar .cart::before {
+  content: "\62";
+  margin-right: 17px;
+  font-family: "symbols-technomart";
+  font-size: 17px;
+  opacity: 0.3;
 }
 
 .user-bar .bookmarks:hover,
 .user-bar .cart:hover {
   background-color: #212a3a;
+}
+
+.user-bar .bookmarks:hover::before,
+.user-bar .cart:hover::before {
+  opacity: 1;
 }
 
 .user-bar .bookmarks:active,
@@ -279,6 +324,11 @@ img {
   border: 3px solid #fff;
   box-sizing: border-box;
 }
+
+/*.phonenumber p::before{
+  content: "\1f4de";
+  font-size: 22px;
+} */
 
 .contacts .address {
   text-align: center;
