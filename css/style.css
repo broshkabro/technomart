@@ -195,9 +195,9 @@ input[type="search"]:focus {
   color: #000;
 }
 
-/*.search .search-form::before input[type="search"]:focus {
+.search .search-form:focus::before {
   color: #ee3643;
-}*/
+}
 
 .user-bar {
   float: right;
@@ -314,7 +314,7 @@ input[type="search"]:focus {
 }
 
 .contacts .phonenumber { 
-  padding: 9px 47px 9px 67px;
+  padding: 9px 47px 9px 12px;
   margin-bottom: 9px;
 
   text-align: center;
@@ -325,10 +325,13 @@ input[type="search"]:focus {
   box-sizing: border-box;
 }
 
-/*.phonenumber p::before{
+.phonenumber p::before{
   content: "\1f4de";
-  font-size: 22px;
-} */
+  padding-right: 40px;
+  font-family: "symbols-technomart";
+  font-size: 22px;  
+  color: #b7bfc8;
+} 
 
 .contacts .address {
   text-align: center;
@@ -366,9 +369,17 @@ input[type="search"]:focus {
 
 .sign-in {
   max-width: 120px;
-  padding: 13px 26px 13px 46px;
+  padding: 13px 26px 13px 15px;
   margin-right: 10px;
 }
+
+.sign-in::before {
+  content: "\2386";
+  padding-right: 12px;
+  font-family: "symbols-technomart";
+  font-size: 22px;  
+  color: #c5c5c5;
+} 
 
 .sign-up {
   max-width: 150px;
