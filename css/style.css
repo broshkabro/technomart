@@ -391,6 +391,10 @@ input[type="search"]:focus {
   color: #ee3643;
 }
 
+.sign-in:hover::before {
+  color: #32425c;
+}
+
 .sign-in:active,
 .sign-up:active {
   color: rgba(0, 0, 0, 0.3);
