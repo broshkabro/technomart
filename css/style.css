@@ -71,19 +71,19 @@ h1 {
   color: #fff;
 }
 
-h2 {
-  font-size: 30px;   
-  color: #32425c;
-  font-weight: normal;
+h2 { 
   font-family: Cuprum, Arial, sans-serif;
+  font-size: 30px; 
+  font-weight: normal; 
+  color: #32425c;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 18px;   
+  font-family: "PT Sans", Arial, sans-serif; 
+  font-size: 18px;
+  font-weight: bold; 
   color: #000;
-  font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;  
 }
 
 img {
@@ -967,7 +967,7 @@ section .price-btn:after {
 }
 
 .popular-produsers {
-  margin-bottom: 64px;
+  margin-bottom: 70px;
 }
 
 .produsers-logo:hover {
@@ -999,7 +999,132 @@ section .price-btn:after {
 
 .services p {
   line-height: 24px;
+  margin-bottom: 67px;
 }
+
+/*SLIDER PROFITS*/
+
+.slider-profits {
+  position: relative;
+  width: 940px;
+  height: 285px;   
+}
+
+.slider-profits input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.profit-control label {
+  display: block;
+  width: 196px;
+  padding: 15px 22px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #32425c;
+  box-shadow:
+  inset 0 -1px #293449,
+  inset 0 1px #405069;
+  cursor: pointer;  
+}
+
+#profit-btn-1:checked ~ .profit-control label[for="profit-btn-1"],
+#profit-btn-2:checked ~ .profit-control label[for="profit-btn-2"],
+#profit-btn-3:checked ~ .profit-control label[for="profit-btn-3"] {
+  color: #32425c;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.profit-slide {
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-info {
+  width: 380px;
+}
+
+.slide-info h2 {
+  margin-top: 5px;
+  margin-bottom: 36px;
+  
+  font-size: 36px;
+}
+
+.slide-info p {
+  line-height: 24px;
+}
+
+.slide-info .apply-btn {
+  display: block;
+  width: 175px;
+  padding: 10px 10px;
+  margin-top: 25px;
+
+  font-family: Cuprum, Arial, sans-serif;  
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ee3643;
+  border-radius: 3px;  
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slide-info .apply-btn:hover {
+  background-color: #ca2c37;
+} 
+
+.slide-info .apply-btn:active {
+  background-color: #ba2732;
+} 
+
+.profit-slide:nth-child(1) {
+  background-image: url(../img/car.png);
+  background-repeat: no-repeat;
+  background-position: 150px 24px;
+}
+
+.profit-slide:nth-child(2) {
+  background-image: url(../img/guarantee.png);
+  background-repeat: no-repeat;
+  background-position: 240px 0;
+}
+
+.profit-slide:nth-child(3) {
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  background-position: 180px 0;
+}
+
+
+.profit-slide {
+  display: none;
+}
+
+#profit-btn-1:checked ~ .profit-slides .profit-slide:nth-child(1) {
+  display: block;
+}
+#profit-btn-2:checked ~ .profit-slides .profit-slide:nth-child(2) {
+  display: block;
+}
+#profit-btn-3:checked ~ .profit-slides .profit-slide:nth-child(3) {
+  display: block;
+}
+
+/*COMPANY DESCRIPTION*/
 
 .company-description {
   float: left;
@@ -1028,7 +1153,11 @@ section .price-btn:after {
 }
 
 .company-description .sentence {
-  margin-bottom: 35px;
+  margin-bottom: 22px;
+}
+
+.company-description .sentence+p {
+  margin-bottom: 20px;
 }
 
 .company-description ul {
@@ -1257,7 +1386,7 @@ section .price-btn:after {
 .social {
   float: left;
   width: 160px;
-  margin-left: 160px; 
+  margin-left: 145px; 
 
   font-size: 0;   
   text-align: center;  
@@ -1269,9 +1398,9 @@ section .price-btn:after {
   display: inline-block;
   width: 41px;
   height: 41px;
-  margin: 0 5px;
+  margin: 0 2px;
 
-  font-size: 0;   
+  font-size: 0; 
   vertical-align: top;
   text-decoration: none; 
   border-radius: 50%;
@@ -1290,7 +1419,7 @@ section .price-btn:after {
 .social .vk::before {
   content: "\76";
   
-  top: 10px;
+  top: 12px;
   left: 10px;  
 }
 
