@@ -21,8 +21,8 @@ body {
 [class*=" icon-"]::before {
   display: inline-block;
   width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
+  margin-right: 0;
+  margin-left: 0;
 
   font-weight: normal;
   line-height: 1em;
@@ -662,14 +662,14 @@ input[type="search"]:focus {
 }
 
 .slide-text p {
-  margin-top: 10px; 
-  font-size: 18px;  
+  margin-top: 8px; 
+  font-size: 18px; 
+  font-style: normal 
 } 
 
 .open-catalog {
-  /*position: absolute;
-  bottom: 22px;
-  */
+  position: absolute;
+  bottom: 22px;  
 
   display: inline-block;    
   width: 175px;
@@ -703,6 +703,28 @@ input[type="search"]:focus {
   display: none;
 }
 
+/*arrow slider switchers*/
+
+.slider-switcher label {
+  position: absolute;
+  top: 42%;
+  font-family: "symbols-technomart";
+  font-size: 45px;
+  line-height: 18px;
+  color: #fff;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.slider-switcher .icon-left {  
+  left: 16px;  
+}
+
+.slider-switcher .icon-right {
+  right: 11px;  
+}
+
+
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
@@ -710,6 +732,7 @@ input[type="search"]:focus {
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
+
 
 /*POPULAR GOODS AND PRODUCERS*/
 
