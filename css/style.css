@@ -179,7 +179,7 @@ img {
   font-family: "symbols-technomart";
   font-size: 17px;
   color: #fff;
-  opacity: 0.3;
+  opacity: 0.3; 
 }
 
 input[type="search"]:hover {
@@ -195,7 +195,7 @@ input[type="search"]:focus {
   color: #000;
 }
 
-.search .search-form:focus::before {
+input[type="search"]:focus .search-form::before {
   color: #ee3643;
 }
 
