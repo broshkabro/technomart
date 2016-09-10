@@ -1,10 +1,11 @@
 body {
   min-width: 940px;
   margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px; 
   line-height: 18px;  
   font-weight: normal;
-  font-family: "PT Sans", Arial, sans-serif;
   color: #000;
 }
 
@@ -63,10 +64,10 @@ body {
 .icon-search::before { content: "🔍"; } /* "\1f50d" */
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
-h1 {
-  font-size: 24px;     
-  font-weight: normal;    
+h1 {   
   font-family: Cuprum, Arial, sans-serif; 
+  font-size: 24px;     
+  font-weight: normal; 
   text-transform: uppercase;
   color: #fff;
 }
@@ -1518,6 +1519,72 @@ section .price-btn:after {
 .main-filters {
   float: left;
   width: 220px;
+}
+
+/*price filter*/
+
+.filter-price {
+  width: 220px;
+}
+
+.range-bar {
+  position: relative;  
+  height: 79px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  padding-top: 1px; 
+
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+.range-bar .scale {
+  height: 2px;
+  margin-top: 39px;
+
+  background-color: #d7dcde;
+}
+
+.range-bar .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.range-bar .toggle {
+  position: absolute;
+  top: 30px;   
+  width: 4px;
+  height: 4px;
+
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #d5d2cc;
+  cursor: pointer;
+}
+
+.range-bar .min-toggle {
+  left: 20px;
+}
+
+.range-bar .max-toggle {
+  left: 160px;
+}
+
+.price-bar input {
+  width: 75px;
+  padding: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  text-align: center;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f3ec;
 }
 
 /*MAIN-GALLERY HEADER*/
