@@ -71,10 +71,11 @@
 
       <main>
         <div class="container clearfix">
-          <ul class="bread-crumbs">
-            <li> <a href="#"> Каталог </a> </li>
+          <ul class="breadcrumbs">
+            <li> <a class="home" href="index.html"> Главная </a> </li>
+            <li> <a href="catalog.html"> Каталог </a> </li>
             <li> <a href="#"> Инструмент </a> </li>
-            <li> <a href="#"> Перфораторы </a> </li>
+            <li class="current"> Перфораторы </li>
           </ul>
 
           <div class="perforators">
@@ -134,18 +135,18 @@
           </aside>
 
           <div class="main-gallery">
-            <div class="main-gallery-filter clearfix">
-              <span>Сортировка:</span>
-              <ul>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По функционалу</li>
+            <div class="gallery-filter clearfix">
+              <span class="filter-title">Сортировка:</span>
+              <ul class="filter-header">
+                <li> <a class="active" href="#"> По цене </a> </li>
+                <li> <a href="#"> По типу </a> </li>
+                <li> <a href="#"> По функционалу </a> </li>
               </ul>
           
 
               <div class="filter-pointer">
-                <a class="pointer-up" href="#"></a>
-                <a class="pointer-down" href="#"></a>
+                <a class="icon-up-dir active" href="#"></a>
+                <a class="icon-down-dir" href="#"></a>
               </div>
             </div>
 
