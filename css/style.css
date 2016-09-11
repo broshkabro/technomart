@@ -1525,6 +1525,7 @@ section .price-btn:after {
 
 .filter-price {
   width: 220px;
+  margin-bottom: 25px;
 }
 
 .range-bar {
@@ -1573,6 +1574,14 @@ section .price-btn:after {
   left: 160px;
 }
 
+.price-bar {
+  font-size: 0;
+}
+
+.price-bar span {
+  font-size: 17px;
+}
+
 .price-bar input {
   width: 75px;
   padding: 10px;
@@ -1581,11 +1590,26 @@ section .price-btn:after {
   font-weight: normal;
   font-size: 17px;
   text-align: center;
+  color: #000;
 
   border: none;
   border-radius: 5px;
+  outline: none;
   background-color: #f7f3ec;
 }
+
+.min-price {
+  margin-right: 10px;
+}
+
+.max-price {
+  margin-left: 10px;
+  text-align: right;
+}
+
+
+
+
 
 /*MAIN-GALLERY HEADER*/
 
