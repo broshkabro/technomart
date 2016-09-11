@@ -1512,16 +1512,81 @@ section .price-btn:after {
 
 /*=CATALOG.HTML=*/
 
-.perforators {
+.breadcrumbs {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding: 0;  
+
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline;
+  padding-right: 16px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+
+  text-decoration: none;  
+  color: #000; 
+}
+
+.breadcrumbs li::after {
+  content: "\3e";
+  margin-left: 13px;
+
+  font-family: "symbols-technomart";
+  font-size: 14px;
+  color: #c1c6ce;
+} 
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.breadcrumbs .home {
+  font-size: 0;
+}
+
+.breadcrumbs .home::before {
+  content: "\1f3e0";
+  font-family: "symbols-technomart";
+  font-size: 16px;
+  color: #c1c6ce;
+} 
+
+.perforators { 
+  margin-bottom: 20px;
   background-color: #f2f6f8;
 }
 
+.perforators h2 {
+  margin: 0;
+  padding: 34px 30px;
+}
+
+/*ASIDE STYLES*/
 .main-filters {
   float: left;
   width: 220px;
 }
 
-/*price filter*/
+.filter-name p {
+  margin: 0;
+}
+
+.main-filters .filter-name {
+  padding: 13px 19px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+}
+
+/*PRICE FILTER*/
 
 .filter-price {
   width: 220px;
@@ -1607,10 +1672,6 @@ section .price-btn:after {
   text-align: right;
 }
 
-
-
-
-
 /*MAIN-GALLERY HEADER*/
 
 .main-gallery {
@@ -1619,16 +1680,102 @@ section .price-btn:after {
   margin-bottom: 57px;
 }
 
-.main-gallery-filter {
+.gallery-filter {
+  margin-bottom: 20px;
+
+  font-size: 0;
+  text-transform: uppercase;
+  border-radius: 3px;
   background-color: #f7f3ec;  
 }
-/*
-.main-gallery-filter span {
-  float: left;
-  width: 140px;
+
+.filter-title,
+.filter-header,
+.filter-pointer {
+  display: inline-block;  
+
+  font-size: 13px; 
+  vertical-align: middle;
 }
 
-.main-gallery-filter {
+.filter-title {
+  padding-left: 19px;
+  padding-right: 59px;
+}
+
+.filter-header {
+  padding: 0;
+}
+
+.filter-header ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+  list-style: none;
+}
+
+.filter-header li {
+  display: inline-block;  
+
+  font-size: 13px; 
+  vertical-align: middle;
+}
+
+.filter-header li:nth-child(1) {
+  margin-left: 80px;
+  margin-right: 70px;
+}
+
+.filter-header li:nth-child(2) {
+  margin-right: 64px;
+}
+
+.filter-header li:nth-child(3) {
+  margin-right: 35px;
+}
+
+.filter-header a {
+  display: block;
+  margin-bottom: -1px;
+
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-header .active,
+.filter-pointer .active {
+  color: #ee3643;
+  border: none;
+}
+
+.filter-header a:hover {
+  color: #000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.filter-pointer {
+  font-family: "symbols-technomart";
+  font-size: 23px;
+  color: #c6c2bd;
+}
+
+.filter-pointer a {
+  text-decoration: none;
+  color: #c6c2bd;
+}
+
+.filter-pointer a:hover {
+  color: #000;
+}
+
+/*
+.gallery-filter span {
+
+}
+
+.gallery-filter {
   float: right;
   width: 380px;
 }
