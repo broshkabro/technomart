@@ -1577,10 +1577,11 @@ section .price-btn:after {
 
 .filter-name p {
   margin: 0;
+  padding: 0;
 }
 
 .main-filters .filter-name {
-  padding: 13px 19px;
+  padding: 11px 19px;
   text-transform: uppercase;
   border-radius: 3px;
   background-color: #f7f3ec;
@@ -1705,6 +1706,7 @@ section .price-btn:after {
 
 .filter-header {
   padding: 0;
+  margin: 11px 0;
 }
 
 .filter-header ul {
@@ -1719,20 +1721,21 @@ section .price-btn:after {
   display: inline-block;  
 
   font-size: 13px; 
+  line-height: 13px;
   vertical-align: middle;
 }
 
 .filter-header li:nth-child(1) {
   margin-left: 80px;
-  margin-right: 70px;
+  margin-right: 68px;
 }
 
 .filter-header li:nth-child(2) {
-  margin-right: 64px;
+  margin-right: 60px;
 }
 
 .filter-header li:nth-child(3) {
-  margin-right: 35px;
+  margin-right: 42px;
 }
 
 .filter-header a {
@@ -1770,20 +1773,7 @@ section .price-btn:after {
   color: #000;
 }
 
-/*
-.gallery-filter span {
 
-}
-
-.gallery-filter {
-  float: right;
-  width: 380px;
-}
-
-.filter-pointer {
-  float: right;
-  width: 60px;
-}*/
 
 /*MAIN-GALLERY GOODS*/
 
@@ -1811,7 +1801,13 @@ section .price-btn:after {
   background-color: #f2f6f8;
 }
 
+.perforators-description b {
+  font-family: Cuprum, Arial, sans-serif;
 
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 /*для оформления*/
 /*
