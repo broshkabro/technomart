@@ -831,10 +831,6 @@ input[type="search"]:focus .search-form::before {
   vertical-align: middle;     
 }
 
-.new .price-btn{
-  margin-top: 38px;
-}
-
 section .title {
   margin-top: 10px;
   margin-bottom: 11px;
@@ -876,6 +872,11 @@ section .price-btn:after {
   border: 20px solid #fff;
   border-left-color: #ee3643
 }
+
+section .new-item {
+  margin-top: 38px;
+}
+
 
 /*style for buy-bookmarks action*/
 .catalog-item .actions {
@@ -1782,13 +1783,22 @@ section .price-btn:after {
 }
 
 .main-gallery-items section {
-  display: inline-block;
-  width: 220px;
+  position: relative;
+  display: inline-block; 
+
+  width: 218px;
+  height: 316px;
   margin-right: 20px;
   margin-bottom: 20px;
+  
   vertical-align: top;
+  border: 1px solid #e5e5e5; 
   font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center; 
 }
+
 
 .main-gallery-items section:nth-child(3n) {
   margin-right: 0;
