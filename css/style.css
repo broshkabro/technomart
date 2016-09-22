@@ -1573,7 +1573,7 @@ section .new-item {
 /*ASIDE STYLES*/
 .main-filters {
   float: left;
-  width: 220px;
+  width: 220px;  
 }
 
 .filter-name p {
@@ -1592,13 +1592,18 @@ section .new-item {
 
 .filter-price {
   width: 220px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-price h3 {
+  text-transform: uppercase;
 }
 
 .range-bar {
   position: relative;  
   height: 79px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   padding: 0 20px;
   padding-top: 1px; 
 
@@ -1687,15 +1692,24 @@ input[type="radio"] {
   margin: 0;
 }
 
+.main-filters legend {
+  padding-top: 23px;
+  
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;  
+}
+
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   position: relative;
 
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
   padding-left: 34px; 
   font-size: 15px;
   line-height: 20px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -1726,6 +1740,25 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
   content: "\25cf";
+}
+
+.main-filters .filter-producers {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*SORT BTN*/
+
+.main-filters .sort-btn {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  margin-top: 58px;
+
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*MAIN-GALLERY HEADER*/
