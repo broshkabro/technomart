@@ -1257,7 +1257,7 @@ section .new-item {
 .footer-navigation .logo {
   display: block;
   width: 210px;
-  padding: 20px 5px;
+  padding: 18px 5px;
   padding-bottom: 15px;    
 }
 
@@ -1746,6 +1746,21 @@ input[type="radio"]:checked + label::before {
   border-bottom: 1px solid #e5e5e5;
 }
 
+input[type="checkbox"] + label:hover::before,
+input[type="radio"] + label:hover::before {
+  color: #b5b5b5;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="radio"]:disabled + label::before {
+  color: rgba(181, 181, 181, 0.3);
+}  
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}  
+
 /*SORT BTN*/
 
 .main-filters .sort-btn {
@@ -1755,6 +1770,7 @@ input[type="radio"]:checked + label::before {
   margin-top: 58px;
 
   text-align: center;
+  color: #000;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   text-decoration: none;
@@ -1766,7 +1782,7 @@ input[type="radio"]:checked + label::before {
 .main-gallery {
   float: right;
   width: 700px;
-  margin-bottom: 57px;
+  margin-bottom: 60px;
 }
 
 .gallery-filter {
@@ -1862,7 +1878,6 @@ input[type="radio"]:checked + label::before {
 }
 
 
-
 /*MAIN-GALLERY GOODS*/
 
 .main-gallery-items {
@@ -1891,19 +1906,62 @@ input[type="radio"]:checked + label::before {
   margin-right: 0;
 }
 
-.perforators-description {
-  padding-top: 67px;
-  padding-bottom: 70px;
+.perforators-description { 
+  padding-top: 1px;
   clear: both;
   background-color: #f2f6f8;
 }
 
-.perforators-description b {
+.perforators-description h2 {
+  margin-top: 70px;
+  margin-bottom: 32px;
   font-family: Cuprum, Arial, sans-serif;
-
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.perforators-description p {
+  margin: 0;
+  padding-bottom: 67px;
+  line-height: 24px;
+}
+
+/*PAGINATOR*/
+
+.pagination {
+  margin-top: 32px;
+  font-size: 0;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block;
+  min-width: 8px;
+  height: 10px;  
+  margin-right: 10px;
+  padding: 13px 14px;
+  
+  font-size: 13px;
+  color: #000;
+  line-height: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination .current {
+  color: #fff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+}
+
+.pagination .next {
+  min-width: 110px;
 }
 
 /*для оформления*/
