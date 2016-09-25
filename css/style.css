@@ -123,6 +123,10 @@ img {
   padding: 12px 0;
   margin: 0;
 }
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .logo:hover {
   background-color: #ca2c37;
@@ -311,7 +315,7 @@ input[type="search"]:focus .search-form::before {
 .shop-info .contacts {
   float: left;
   width: 270px;
-  margin-right: 68px;    
+  margin-right: 50px;    
 }
 
 .contacts .phonenumber { 
@@ -343,7 +347,7 @@ input[type="search"]:focus .search-form::before {
 
 .user-block {
   float: right;
-  width: 280px;
+  width: 300px;
 }
 
 /*sign-in and registration btns*/
@@ -372,6 +376,7 @@ input[type="search"]:focus .search-form::before {
   max-width: 120px;
   padding: 13px 26px 13px 15px;
   margin-right: 10px;
+  margin-left: 19px;
 }
 
 .sign-in::before {
@@ -1915,6 +1920,7 @@ input[type="radio"]:disabled + label {
 .perforators-description h2 {
   margin-top: 70px;
   margin-bottom: 32px;
+
   font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -1963,6 +1969,81 @@ input[type="radio"]:disabled + label {
 .pagination .next {
   min-width: 110px;
 }
+
+.pagination a:hover {
+  border-color: #bdc6ca;
+}
+
+.pagination a:active {
+  border-color: #bdc6ca;
+}
+
+.pagination a:active {
+  border-color: #ee3643;
+}
+
+/*LOG IN BLOCK*/
+
+.user-block .username {
+  display: inline-block;
+  width: 292px;
+  margin-bottom: 7px;
+  padding: 12px 0px 12px 8px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 21px;
+  color: #000;
+  text-decoration: none; 
+  text-align: center;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.user-block .username::before {
+  content: "\1f468";
+  padding-right: 12px;
+
+  font-family: "symbols-technomart";
+  font-size: 18px;
+  color: #c5c5c5;
+} 
+
+.user-block .username::after {
+  content: "\241b";
+  margin-left: 35px;
+
+  font-family: "symbols-technomart";
+  font-size: 22px;
+  color: #c5c5c5;
+} 
+
+.user-links a {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;  
+  text-decoration: underline;
+}
+
+.user-links .user-order {
+  padding-left: 18px;
+}
+
+.user-links .user-account::before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  margin-left: 12px;
+  width: 4px;
+  height: 4px;
+
+  color: #32425c;
+  line-height: 4px;
+  border-radius: 50%; 
+  background-color: #32425c;
+  vertical-align: middle;
+}
+
 
 /*для оформления*/
 /*
