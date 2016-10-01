@@ -21,7 +21,7 @@ body {
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
-  width: 1em;
+
   margin-right: 0;
   margin-left: 0;
 
@@ -206,43 +206,43 @@ input[type="search"]:focus .search-form::before {
 
 .user-bar {
   float: right;
-  width: 449px; 
+  width: 450px; 
   font-size: 0; 
 }
 
 .user-bar a {
-  display: inline-block;  
+  display: inline-block; 
+  width: 150px;
   padding: 12px 0;  
 
-  vertical-align: top;
-  text-decoration: none;
   font-size: 17px;
   font-family: Cuprum, Arial, sans-serif;
+  vertical-align: top;
+  text-decoration: none;
   color: #fff;
 }
 
+.user-bar span {
+  display: inline-block;
+  padding-left: 4px; 
+}
 
-.user-bar .bookmarks {
-  padding-right: 28px;
-  padding-left: 17px;
-}*
 
-.user-bar .bookmarks::before {
+.user-bar .bookmarks::before {  
   content: "\1f516";
-  margin-right: 13px;  
+  margin-left: 18px;  
+  margin-right: 13px;
+
   font-family: "symbols-technomart";
   font-size: 17px;
   opacity: 0.3;
 }
 
-.user-bar .cart {
-  padding-right: 31px;
-  padding-left: 17px
-}
-
 .user-bar .cart::before {
   content: "\62";
+  margin-left: 17px;
   margin-right: 17px;
+
   font-family: "symbols-technomart";
   font-size: 17px;
   opacity: 0.3;
@@ -264,9 +264,9 @@ input[type="search"]:focus .search-form::before {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 .user-bar .order {
-  padding-right: 21px;
-  padding-left: 21px;
+  text-align: center;
   background-color: #63a63e;
 }
 
@@ -277,6 +277,29 @@ input[type="search"]:focus .search-form::before {
 .user-bar .order:active {
   background-color: #518534;
   color: rgba(255, 255, 255, 0.6);  
+} 
+
+/*full-empty cart bar*/
+
+.user-bar-index .cart-full {
+  display: none;
+}
+
+.user-bar-catalog .cart-empty {
+  display: none;
+}
+
+.user-bar-catalog .cart-full {
+  display: inline-block; 
+  background-color: #ee3643; 
+}
+
+.user-bar .cart-full:hover {
+  background-color: #ca2c37;
+} 
+
+.user-bar .cart-full:active {
+  background-color: #ba2732;
 } 
 
 .top-menu {
@@ -2042,6 +2065,26 @@ input[type="radio"]:disabled + label {
   border-radius: 50%; 
   background-color: #32425c;
   vertical-align: middle;
+}
+
+.user-block .username:hover::before,
+.user-block .username:hover::after {
+  color: #32425c;
+}
+
+.user-links .user-order:hover,
+.user-links .user-account:hover {
+  color: #ee3643;
+}
+
+.username:active,
+.user-links .user-order:active,
+.user-links .user-account:active {
+  opacity: 0.3;
+} 
+
+.user-links .user-account:active::before {
+  opacity: 1;
 }
 
 
