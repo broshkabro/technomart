@@ -429,6 +429,103 @@ input[type="search"]:focus .search-form::before {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*LOG IN BLOCK*/
+
+.user-block .username {
+  display: inline-block;
+  width: 292px;
+  margin-bottom: 7px;
+  padding: 12px 0px 12px 8px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 21px;
+  color: #000;
+  text-decoration: none; 
+  text-align: center;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.user-block .username::before {
+  content: "\1f468";
+  padding-right: 12px;
+
+  font-family: "symbols-technomart";
+  font-size: 18px;
+  color: #c5c5c5;
+} 
+
+.user-block .username::after {
+  content: "\241b";
+  margin-left: 35px;
+
+  font-family: "symbols-technomart";
+  font-size: 22px;
+  color: #c5c5c5;
+} 
+
+.user-links a {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;  
+  text-decoration: underline;
+}
+
+.user-links .user-order {
+  padding-left: 18px;
+}
+
+.user-links .user-account::before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  margin-left: 12px;
+  width: 4px;
+  height: 4px;
+
+  color: #32425c;
+  line-height: 4px;
+  border-radius: 50%; 
+  background-color: #32425c;
+  vertical-align: middle;
+}
+
+.user-block .username:hover::before,
+.user-block .username:hover::after {
+  color: #32425c;
+}
+
+.user-links .user-order:hover,
+.user-links .user-account:hover {
+  color: #ee3643;
+}
+
+.username:active,
+.user-links .user-order:active,
+.user-links .user-account:active {
+  opacity: 0.3;
+} 
+
+.user-links .user-account:active::before {
+  opacity: 1;
+}
+
+/*log-in log-out bar*/
+
+.log-in-index {
+  display: none;
+}
+
+.log-in-catalog {
+  display: inline-block;
+}
+
+.log-out-catalog {
+  display: none;
+}
+
+
 /*main navigation*/
 
 .main-menu {
@@ -2005,87 +2102,6 @@ input[type="radio"]:disabled + label {
   border-color: #ee3643;
 }
 
-/*LOG IN BLOCK*/
-
-.user-block .username {
-  display: inline-block;
-  width: 292px;
-  margin-bottom: 7px;
-  padding: 12px 0px 12px 8px;
-
-  font-family: Cuprum, Arial, sans-serif;
-  font-size: 21px;
-  color: #000;
-  text-decoration: none; 
-  text-align: center;
-  vertical-align: top;
-  background-color: #fff;
-}
-
-.user-block .username::before {
-  content: "\1f468";
-  padding-right: 12px;
-
-  font-family: "symbols-technomart";
-  font-size: 18px;
-  color: #c5c5c5;
-} 
-
-.user-block .username::after {
-  content: "\241b";
-  margin-left: 35px;
-
-  font-family: "symbols-technomart";
-  font-size: 22px;
-  color: #c5c5c5;
-} 
-
-.user-links a {
-  font-family: Cuprum, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;  
-  text-decoration: underline;
-}
-
-.user-links .user-order {
-  padding-left: 18px;
-}
-
-.user-links .user-account::before {
-  content: "";
-  display: inline-block;
-  margin-right: 13px;
-  margin-left: 12px;
-  width: 4px;
-  height: 4px;
-
-  color: #32425c;
-  line-height: 4px;
-  border-radius: 50%; 
-  background-color: #32425c;
-  vertical-align: middle;
-}
-
-.user-block .username:hover::before,
-.user-block .username:hover::after {
-  color: #32425c;
-}
-
-.user-links .user-order:hover,
-.user-links .user-account:hover {
-  color: #ee3643;
-}
-
-.username:active,
-.user-links .user-order:active,
-.user-links .user-account:active {
-  opacity: 0.3;
-} 
-
-.user-links .user-account:active::before {
-  opacity: 1;
-}
 
 
 /*для оформления*/
