@@ -378,5 +378,26 @@
           </div>  
         </div>
       </footer>
+
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+
+        <form class="write-us" method="post" action="form.php">          
+          <div class="username-field">
+            <label for="name-field">Ваше имя:</label>
+            <input id="name-field" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+          </div>  
+
+          <div class="mail-to-field">
+            <label for="mail-to">Ваш e-mail:</label>
+            <input id="mail-to" type="text" name="e-mail" placeholder="Для отправки ответа" required>
+          </div>
+
+          <div class="textarea-field">  
+            <label for="answer-field">Текст письма:</label>
+            <textarea id="answer-field" name="answer" required>В свободной форме</textarea>
+          </div>  
+        </form>
+      </div>
     </body>
   </html>
