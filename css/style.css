@@ -2257,8 +2257,7 @@ input[type="radio"]:disabled + label {
 }
 
 .content-sent-btn {
-  display: block;
-  width: 440px;
+  width: 460px;
   
   margin-left: 80px;  
   padding: 10px;
@@ -2276,4 +2275,24 @@ input[type="radio"]:disabled + label {
 
   background-color: #ee3643;
   cursor: pointer;
+}
+
+.content-sent-btn:hover {
+  background-color: #ca2c37;
+}
+
+.content-sent-btn:active {
+  background-color: #ba2732;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-100px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(10px);}
+  100% {transform: translateY(0);}
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
 }

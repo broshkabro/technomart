@@ -399,7 +399,7 @@
         </form>
 
         <div class="modal-content-sent">
-          <a class="content-sent-btn" href="#">Отправить</a>
+          <button class="content-sent-btn" type="submit">Отправить</button>
         </div> 
 
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> 
@@ -417,9 +417,14 @@
         link.addEventListener("click", function(event) {
           event.preventDefault();
           popup.classList.add("modal-content-show"); 
+          if (storage) {
+          nameField.value = storage;
+          mailField.focus();
+          } else {
           nameField.focus();
-        });
-        
+          }    
+        });          
+
         close.addEventListener("click", function(event) {
           event.preventDefault();
           popup.classList.remove("modal-content-show");
@@ -431,6 +436,14 @@
             console.log("Введите логин и пароль");  
           } else {
             localStorage.setItem("nameField", nameField.value);
+          }
+        });
+
+        window.addEventListener("keydown", function(event) {
+          if (event.keyCode===27) {
+            if (popup.classList.contains("modal-content-show")) {
+              popup.classList.romove("modal-content-show");
+            }
           }
         });
       </script>
