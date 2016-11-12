@@ -18,15 +18,15 @@
             </div>
 
             <div class="search">
-              <form class="search-form" method="get">
-                <input id="search" type="search" name="search-field" placeholder="Поиск:">
+              <form class="search-form icon" method="get">
+                <input type="search" name="search-field" placeholder="Поиск:">
               </form>
             </div>
 
             <div class="user-bar user-bar-index">
-              <a class="bookmarks" href="#">Закладки:<span>0</span></a>
-              <a class="cart cart-empty" href="#">Корзина:<span>0</span></a>
-              <a class="cart cart-full" href="#">Корзина:<span>10</span></a>
+              <a class="bookmarks icon" href="#">Закладки:<span>0</span></a>
+              <a class="cart cart-empty icon" href="#">Корзина:<span>0</span></a>
+              <a class="cart cart-full icon" href="#">Корзина:<span>10</span></a>
               <a class="order" href="#">Оформить заказ</a>              
             </div>
           </div>
@@ -40,7 +40,7 @@
 
             <div class="contacts">
               <div class="phonenumber">
-                <p>+7 (812) 555-05-55</p>
+                <p class="icon">+7 (812) 555-05-55</p>
               </div>
               <div class="address">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="user-block log-out-index">
-              <a class="sign-in" href="#">Войти</a>
+              <a class="sign-in icon" href="#">Войти</a>
               <a class="sign-up" href="#">Регистрация</a>
             </div> 
 
@@ -78,7 +78,7 @@
       <main>
         <div class="container clearfix">  
           <div class="offer-blocks clearfix">
-            <div class="offer materials">
+            <div class="offer materials new">
               <b>Материалы</b>              
               <a class="promo-btn" href="#">На любой вкус</a> 
             </div>
@@ -94,15 +94,15 @@
             </div>
 
             <div class="slider">
-              <input type="radio" id="btn-1" name="toggle" checked>
-              <input type="radio" id="btn-2" name="toggle">
+              <input type="radio" id="btn-left" name="toggle" checked>
+              <input type="radio" id="btn-right" name="toggle">
               <div class="slider-control">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
+                <label for="btn-left"></label>
+                <label for="btn-right"></label>
               </div>
               <div class="slider-switcher">
-                <label class="icon-left" for="btn-1"></label>
-                <label class="icon-right" for="btn-2"></label>
+                <label class="icon-left arrow" for="btn-left"></label>
+                <label class="icon-right arrow" for="btn-right"></label>
               </div>
               <div class="slides">
                 <div class="slide">
@@ -389,7 +389,7 @@
 
           <div class="mail-to-field">
             <label for="write-mail">Ваш e-mail:</label>
-            <input id="write-mail" type="text" name="e-mail" placeholder="Для отправки ответа" required>
+            <input id="write-mail" type="text" name="email" placeholder="Для отправки ответа" required>
           </div>
 
           <div class="textarea-field">  
@@ -399,53 +399,12 @@
         </form>
 
         <div class="modal-content-sent">
-          <button class="content-sent-btn" type="submit">Отправить</button>
+          <button class="content-sent-btn" type="submit" title="Отправить">Отправить</button>
         </div> 
 
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> 
       </div>
 
-      <script>
-        var link = document.querySelector(".mail-to");
-        var popup = document.querySelector(".modal-content");
-        var close = document.querySelector(".modal-content-close");
-        var nameField = popup.querySelector("[name=name]"); 
-        var mailField = popup.querySelector("[name=e-mail]"); 
-        var form = popup.querySelector("form");
-        var storage = localStorage.getItem("nameField");
-
-        link.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.add("modal-content-show"); 
-          if (storage) {
-          nameField.value = storage;
-          mailField.focus();
-          } else {
-          nameField.focus();
-          }    
-        });          
-
-        close.addEventListener("click", function(event) {
-          event.preventDefault();
-          popup.classList.remove("modal-content-show");
-        });
-
-        form.addEventListener("submit", function(event) {
-          if (!nameField.value || !mailField.value) {
-            event.preventDefault();
-            console.log("Введите логин и пароль");  
-          } else {
-            localStorage.setItem("nameField", nameField.value);
-          }
-        });
-
-        window.addEventListener("keydown", function(event) {
-          if (event.keyCode===27) {
-            if (popup.classList.contains("modal-content-show")) {
-              popup.classList.romove("modal-content-show");
-            }
-          }
-        });
-      </script>
+      <script src="js/popup.js"></script>
     </body>
   </html>
