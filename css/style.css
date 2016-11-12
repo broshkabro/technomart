@@ -412,35 +412,41 @@ input[type="search"]:focus .search-form::before {
 
 .user-block .username {
   display: inline-block;
-  width: 292px;
+  width: 252px;
   margin-bottom: 7px;
-  padding: 12px 0px 12px 8px;
+  padding: 12px 0;  
+  padding-left: 48px;
 
   font-family: Cuprum, Arial, sans-serif;
   font-size: 21px;
   color: #000;
   text-decoration: none; 
-  text-align: center;
+
   vertical-align: top;
   background-color: #fff;
 }
 
-.user-block .username::before {
-  content: "\1f468";
-  padding-right: 12px;
 
-  font-family: "symbols-technomart";
-  font-size: 18px;
-  color: #c5c5c5;
+.username::before {
+  top: 21px;
+  left: 24px;
+  width: 20px;
+  height: 18px; 
+  background-position: -207px 0px;
 } 
 
-.user-block .username::after {
-  content: "\241b";
-  margin-left: 35px;
-
-  font-family: "symbols-technomart";
-  font-size: 22px;
-  color: #c5c5c5;
+.username::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 21px;
+  height: 17px;
+  
+  transform: translate(-50%,-50%);
+  background-image: url("../img/sprite-all.png");
+  background-repeat: no-repeat;  
+  background-position: -974px 0px;  
 } 
 
 .user-links a {
@@ -470,9 +476,24 @@ input[type="search"]:focus .search-form::before {
   vertical-align: middle;
 }
 
-.user-block .username:hover::before,
+.user-block .username:active  {
+  color: #cacaca;
+}
+
+.user-block .username:hover::before {
+  background-position: -237px 0px;
+}
+
 .user-block .username:hover::after {
-  color: #32425c;
+  background-position: -1005px 0px; 
+}
+
+.user-block .username:active::before {
+  background-position: -267px 0px;
+}
+
+.user-block .username:active::after {
+  background-position: -1036px 0px; 
 }
 
 .user-links .user-order:hover,
@@ -480,7 +501,6 @@ input[type="search"]:focus .search-form::before {
   color: #ee3643;
 }
 
-.username:active,
 .user-links .user-order:active,
 .user-links .user-account:active {
   opacity: 0.3;
@@ -1651,17 +1671,19 @@ section .new-item {
 /*=CATALOG.HTML=*/
 
 .breadcrumbs {
+  position: relative;
+
   margin: 0;
-  margin-top: 18px;
+  margin-top: 21px;
   margin-bottom: 18px;
-  padding: 0;  
+  padding: 0; 
 
   list-style: none;
 }
 
 .breadcrumbs li {
   display: inline;
-  padding-right: 16px;
+  padding-right: 37px;
   text-transform: uppercase;
 }
 
@@ -1674,27 +1696,52 @@ section .new-item {
 }
 
 .breadcrumbs li::after {
-  content: "\3e";
-  margin-left: 13px;
+  content: "";
+  position: absolute;
+  top: 8px;  
+  width: 8px;
+  height: 12px; 
 
-  font-family: "symbols-technomart";
-  font-size: 14px;
-  color: #c1c6ce;
+  transform: translate(-50%,-50%);
+  background-image: url("../img/sprite-all.png");
+  background-repeat: no-repeat;  
+  background-position: -841px 0px;
 } 
+
+.breadcrumbs li:nth-child(1)::after {
+  left: 31px;
+}
+
+.breadcrumbs li:nth-child(2)::after {
+  left: 127px;
+}
+
+.breadcrumbs li:nth-child(3)::after {
+  left: 245px;
+}
+
 
 .breadcrumbs .current::after {
   display: none;
 }
 
 .breadcrumbs .home {
+  padding-right: 18px; 
   font-size: 0;
 }
 
 .breadcrumbs .home::before {
-  content: "\1f3e0";
-  font-family: "symbols-technomart";
-  font-size: 16px;
-  color: #c1c6ce;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 15px;
+  height: 12px; 
+  
+  transform: translate(-50%,-50%);
+  background-image: url("../img/sprite-all.png");
+  background-repeat: no-repeat;
+  background-position: -859px 0px;
 } 
 
 .perforators { 
@@ -1852,45 +1899,63 @@ input[type="radio"] + label {
 
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0; 
+  top: 50%;
+  left: 13px; 
   width: 18px;
   height: 18px;
 
-  font-family: "symbols-technomart";
-  font-size: 28px;
-  color: #c1c1c1;
-}
-
+  transform: translate(-50%,-50%);
+  background-image: url("../img/sprite-all.png");
+  background-repeat: no-repeat;
+}  
+ 
 input[type="checkbox"] + label::before {
-  content: "\2610";
+  width: 30px;
+  height: 24px;
+  background-position: -297px 0px; 
 }
 
 input[type="checkbox"]:checked + label::before {
-  content: "\2611";
+  width: 30px;
+  height: 24px; 
+  background-position: -396px 0px; 
 }
 
 input[type="radio"] + label::before {
-  content: "\25cb";
+  width: 30px;
+  height: 26px;
+  background-position: -507px 0px; 
 }
 
 input[type="radio"]:checked + label::before {
-  content: "\25cf";
+  background-position: -612px 0px; 
 }
 
 .main-filters .filter-producers {
   border-bottom: 1px solid #e5e5e5;
 }
 
-input[type="checkbox"] + label:hover::before,
+input[type="checkbox"] + label:hover::before {
+  background-position: -363px 0px;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
+  background-position: -433px 0px; 
+}
+
 input[type="radio"] + label:hover::before {
-  color: #b5b5b5;
+  background-position: -542px 0px;
+}
+
+input[type="radio"]:checked + label:hover::before {
+  background-position: -647px 0px;
 }
 
 input[type="checkbox"]:disabled + label::before,
 input[type="radio"]:disabled + label::before {
-  color: rgba(181, 181, 181, 0.3);
+  opacity: 0.3;
 }  
 
 input[type="checkbox"]:disabled + label,
@@ -2000,20 +2065,46 @@ input[type="radio"]:disabled + label {
 }
 
 .filter-pointer {
-  font-family: "symbols-technomart";
-  font-size: 23px;
-  color: #c6c2bd;
+  position: relative;
+}
+
+.icon-up::before {
+  left: 10px;
+  width: 11px;
+  height: 10px;
+  background-position: -778px 0px;
+}
+
+.icon-down::before {
+  left: 45px;
+  width: 11px;
+  height: 10px;
+  background-position: -717px 0px; 
 }
 
 .filter-pointer a {
   text-decoration: none;
-  color: #c6c2bd;
 }
 
-.filter-pointer a:hover {
-  color: #000;
+.icon-up:hover::before {
+  background-position: -799px 0px;
 }
 
+.icon-down:hover::before {
+  background-position: -738px 0px;
+}
+
+.icon-up:active::before {
+  background-position: -820px 0px;
+}
+
+.icon-down:active::before {
+  background-position: -759px 0px;
+}
+
+.active::before {
+  background-position: -820px 0px;
+}
 
 /*MAIN-GALLERY GOODS*/
 
