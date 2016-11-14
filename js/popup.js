@@ -1,6 +1,10 @@
 var link = document.querySelector(".mail-to");
 var popup = document.querySelector(".modal-content");
-var close = document.querySelector(".modal-content-close");
+var closeForm = document.querySelector(".modal-content-close");
+
+var buy = document.querySelector(".buy");
+var modalBuy = document.querySelector(".modal-buy");
+var closeNote = document.querySelector(".modal-buy-close");
 
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]"); 
@@ -31,10 +35,22 @@ var storage = localStorage.getItem("login");
     }
   }); 
 
-  close.addEventListener("click", function(event) {
+  closeForm.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("modal-content-show");
     popup.classList.remove("modal-error");
+  });
+
+
+  buy.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalBuy.classList.add("modal-buy-show");
+  })
+
+
+  closeNote.addEventListener("click", function(event) {
+    event.preventDefault();
+    modalBuy.classList.remove("modal-buy-show");
   });
 
 

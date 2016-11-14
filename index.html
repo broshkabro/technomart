@@ -36,7 +36,9 @@
         <div class="container clearfix"> 
           <div class="shop-info clearfix">
             <div class="description">
-              <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+              <p>Интернет-магазин
+                 строительных материалов <br>
+                 и инструментов для ремонта</p>
             </div>
 
             <div class="contacts">
@@ -384,12 +386,12 @@
         <form class="write-us" method="post" action="form.php">          
           <div class="username-field">
             <label for="name-field">Ваше имя:</label>
-            <input id="name-field" type="text" name="login" placeholder="Представьтесь, пожалуйста" required>
+            <input id="name-field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
           </div>  
 
           <div class="mail-to-field">
             <label for="write-mail">Ваш e-mail:</label>
-            <input id="write-mail" type="text" name="email" placeholder="Для отправки ответа" required>
+            <input id="write-mail" type="text" name="email" placeholder="Для отправки ответа">
           </div>
 
           <div class="textarea-field">  
@@ -404,6 +406,17 @@
 
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> 
       </div>
+
+      <div class="modal-buy">
+         <button class="modal-buy-close" type="button" title="Закрыть">Закрыть</button>
+         <div class="notification">
+           <p>Товар добавлен в корзину!</p>
+         </div>
+         <div class="shopping-actions">
+           <a class="place-order" href="#">Оформить заказ</a>
+           <a class="continue-shopping" href="#">Продолжить покупки</a>
+         </div>
+      </div>      
 
       <script src="js/popup.js"></script>
     </body>

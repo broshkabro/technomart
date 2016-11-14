@@ -1486,6 +1486,7 @@ section .new-item {
 .address-phone {
   float: left;
   width: 330px;
+  margin-left: 3px;
 
   font-family: Cuprum, Arial, sans-serif;
   font-size: 18px;
@@ -1533,7 +1534,7 @@ section .new-item {
 }
 
 .footer-menu-bottom {
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .address-phone {
@@ -2283,7 +2284,7 @@ input[type="radio"]:disabled + label {
   padding: 7px 14px;
 
   font-size: 13px;
-  color: rgba(153, 153, 153, 1);
+  color: #000;
   border: 2px solid #d7dcde;
   border-radius: 3px;
   outline: none;
@@ -2412,7 +2413,7 @@ input[type="radio"]:disabled + label {
 /*popup add to cart*/
 .modal-buy {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 410px;
   left: 50%;
   width: 620px;  
@@ -2501,4 +2502,41 @@ input[type="radio"]:disabled + label {
   background-position: -1226px 80%;  
 }
 
+.modal-buy-close {
+  position: absolute;
+  top: 8px;
+  right: -3px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;  
+}
+
+.modal-buy-close::before,
+.modal-buy-close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 27px;
+  height: 5px;
+
+  background-color: #ee3643;
+  border-radius: 1px;
+}
+
+.modal-buy-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-buy-close::after {
+  transform: rotate(-45deg);
+}
   
