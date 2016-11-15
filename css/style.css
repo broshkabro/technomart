@@ -2275,8 +2275,11 @@ input[type="radio"]:disabled + label {
 /*style for form*/
 .write-us {
   padding-top: 39px;
-  padding-left: 80px;
   font-size: 0;
+}
+
+.form-fields {
+  padding-left: 80px;
 }
 
 .write-us input,

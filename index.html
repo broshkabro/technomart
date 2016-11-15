@@ -383,26 +383,28 @@
       </footer>
 
       <div class="modal-content">  
-        <form class="write-us" method="post" action="form.php">          
-          <div class="username-field">
-            <label for="name-field">Ваше имя:</label>
-            <input id="name-field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+        <form class="write-us" method="post" action="form.php">
+          <div class="form-fields">          
+            <div class="username-field">
+              <label for="name-field">Ваше имя:</label>
+              <input id="name-field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+            </div>  
+
+            <div class="mail-to-field">
+              <label for="write-mail">Ваш e-mail:</label>
+              <input id="write-mail" type="text" name="email" placeholder="Для отправки ответа">
+            </div>
+
+            <div class="textarea-field">  
+              <label for="answer-field">Текст письма:</label>
+              <textarea id="answer-field" name="answer">В свободной форме</textarea>
+            </div> 
           </div>  
 
-          <div class="mail-to-field">
-            <label for="write-mail">Ваш e-mail:</label>
-            <input id="write-mail" type="text" name="email" placeholder="Для отправки ответа">
-          </div>
-
-          <div class="textarea-field">  
-            <label for="answer-field">Текст письма:</label>
-            <textarea id="answer-field" name="answer" required>В свободной форме</textarea>
-          </div>  
+          <div class="modal-content-sent">
+            <button class="content-sent-btn" type="submit" title="Отправить">Отправить</button>
+          </div>            
         </form>
-
-        <div class="modal-content-sent">
-          <button class="content-sent-btn" type="submit" title="Отправить">Отправить</button>
-        </div> 
 
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> 
       </div>
