@@ -230,7 +230,8 @@ input[type="search"]:focus+label::before {
 
 .user-bar .bookmarks:active,
 .user-bar .cart:active {
-  background-color: #161d29;   
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);   
 }
 
 .user-bar .bookmarks:active::before {
@@ -288,7 +289,7 @@ input[type="search"]:focus+label::before {
 /*contacts-description,phonenumber and address*/
 
 .shop-info {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   clear: both;  
 }
 
@@ -320,7 +321,7 @@ input[type="search"]:focus+label::before {
 
 .contacts .phonenumber { 
   position: relative;
-  padding: 9px 47px 9px 12px;
+  padding: 10px 47px 10px 12px;
   margin-bottom: 9px;
 
   text-align: center;
@@ -420,7 +421,7 @@ input[type="search"]:focus+label::before {
   display: inline-block;
   width: 252px;
   margin-bottom: 7px;
-  padding: 12px 0;  
+  padding: 13px 0;  
   padding-left: 48px;
 
   font-family: Cuprum, Arial, sans-serif;
@@ -2062,6 +2063,7 @@ input[type="radio"]:disabled + label {
 
 .filter-header .active,
 .filter-pointer .active {
+  margin-bottom: 0;
   color: #ee3643;
   border: none;
 }
@@ -2069,6 +2071,12 @@ input[type="radio"]:disabled + label {
 .filter-header a:hover {
   color: #000;
   border-bottom: 1px solid #ee3643;
+}
+
+.filter-header a:active {
+  margin-bottom: 0;
+  border-bottom: none;
+  color: #ee3643;
 }
 
 .filter-pointer {
