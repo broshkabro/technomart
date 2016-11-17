@@ -1,4 +1,3 @@
-
 var buy = document.querySelector(".buy");
 var modalBuy = document.querySelector(".modal-buy");
 var closeNote = document.querySelector(".modal-buy-close");
