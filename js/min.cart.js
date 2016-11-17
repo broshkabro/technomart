@@ -1,0 +1,1 @@
+var buy=document.querySelector(".buy"),modalBuy=document.querySelector(".modal-buy"),closeNote=document.querySelector(".modal-buy-close");buy.addEventListener("click",function(a){a.preventDefault(),modalBuy.classList.add("modal-buy-show")}),closeNote.addEventListener("click",function(a){a.preventDefault(),modalBuy.classList.remove("modal-buy-show")});
