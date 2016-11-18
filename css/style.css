@@ -1242,13 +1242,14 @@ section .new-item {
   position: absolute;
   top: 0;
   left: 320px;
-  width: 100%;
+  width: 620px;
   height: 100%;
   overflow: hidden;
 }
 
 .slide-info {
   width: 380px;
+  word-wrap: break-word;
 }
 
 .slide-info h2 {
@@ -2287,8 +2288,8 @@ input[type="radio"]:disabled + label {
   top: 8px;
   right: -3px;
 
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 
   font-size: 0;
 
@@ -2604,8 +2605,8 @@ input[type="radio"]:disabled + label {
   top: 8px;
   right: -3px;
 
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 
   font-size: 0;
 
